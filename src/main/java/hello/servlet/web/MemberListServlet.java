@@ -21,7 +21,7 @@ public class MemberListServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         response.setCharacterEncoding("utf-8");
-        List<Member> members = memberRepository.findALl();
+        List<Member> members = memberRepository.findAll();
         PrintWriter w = response.getWriter();
         w.write("<html>");
         w.write("<head>");
