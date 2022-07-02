@@ -1,4 +1,4 @@
-package hello.servlet.web;
+package hello.servlet.web.servlet;
 
 import hello.servlet.domain.member.Member;
 import hello.servlet.domain.member.MemberRepository;
@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "memberSaveServlet", urlPatterns = "/servlet/members/save")
 public class MemberSaveServlet extends HttpServlet {
-    
+
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
     @Override
